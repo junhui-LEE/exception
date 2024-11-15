@@ -13,6 +13,22 @@
         <p>오류 화면 입니다.</p>
     </div>
 
+    <ul>
+        <li>오류 정보</li>
+        <ul>
+<!--            BasicErrorController은 뷰템플릿을 호출할때 다음 정보를 model에 담아서 뷰에 전달한다.-->
+<!--            뷰템플릿은 이 값을 활용해서 출력할 수 있다.-->
+            <li th:text="|timestamp: ${timestamp}|"></li>
+            <li th:text="|path: ${path}|"></li>
+            <li th:text="|status: ${status}|"></li>
+            <li th:text="|message: ${message}|"></li>
+            <li th:text="|error: ${error}|"></li>
+            <li th:text="|exception: ${exception}|"></li>
+            <li th:text="|errors: ${errors}|"></li>
+            <li th:text="|trace: ${trace}|"></li>
+        </ul>
+    </ul>
+
     <hr class="my-4">
 </div><!-- /container -->
 </body>
