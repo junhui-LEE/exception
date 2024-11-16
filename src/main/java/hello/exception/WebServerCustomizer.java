@@ -6,7 +6,7 @@ import org.springframework.boot.web.server.WebServerFactoryCustomizer;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Component;
 
-//@Component
+@Component
 public class WebServerCustomizer implements WebServerFactoryCustomizer<ConfigurableWebServerFactory> {
 //    이렇게 WebServerFactoryCustomizer<ConfigurableWebServerFactory> 제네릭 인터페이스를
 //    구현하고 빈으로 등록 함으로서 스프링부트가 서블릿으로 하여금 각각의 상황에 맞는 오류페이지를
